@@ -3,7 +3,6 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
-//const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -86,9 +85,18 @@ app.delete("/jokes/:id", (req, res) => {
 
 })
 
-
+const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT"
 //8. DELETE All jokes
-
+app.delete("/jokes/:id", (req, res) => {
+  const userKey = req.query.key;
+  if(userKey == masterKey){
+    jokes = [];
+    res.sendStatus(200);
+  }else{
+    res.sendStatus(404)
+       .json({error: "You are not authorised to perform this action"});
+  }
+});
 
 
 
