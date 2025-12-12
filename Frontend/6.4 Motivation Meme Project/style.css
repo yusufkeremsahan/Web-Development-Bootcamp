@@ -1,0 +1,18 @@
+html{
+    background-color: black;
+    color:azure;
+    text-align: center;
+}
+img{
+    border: 5px solid azure;
+    height: 200px;
+    width: 500px;
+}
+h1{
+    font-family: "Libre Baskerville";
+    text-transform: uppercase;
+}
+
+div{
+    margin-top: 100px;
+}

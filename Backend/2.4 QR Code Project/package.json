@@ -1,0 +1,10 @@
+{
+  "name": "qr-code-project-2-4",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "inquirer": "^12.9.4",
+    "qr-creator": "^1.0.0",
+    "qr-image": "^3.2.0"
+  }
+}

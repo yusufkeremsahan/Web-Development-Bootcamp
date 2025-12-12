@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .Container{
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-rows: 414px 131px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .Red{
+      background-color: #E72F24;
+    }
+
+    .Yellow{
+      background-color: #F9D01E;
+    }
+    .Blue{
+      display: grid;
+      grid-template-rows: 130px 1px;
+      background-color: #004592;
+    }
+    .White{
+      background-color: #F0F1EC;
+    }
+    .White-TCol{
+      display: grid;
+      grid-column: span 3;
+      background-color: #F0F1EC;
+    }
+    .White-Drow{
+      display: grid;
+      grid-row: span 2;
+      background-color: #F0F1EC;
+
+    }
+    .White-Drow-Dcol{
+      display: grid;
+      grid-column: span 2;
+      grid-row: span 2;
+      background-color: #F0F1EC;
+
+    }
+    .White-DCol{
+      display: grid;
+      grid-column: span 2;
+      background-color:#F0F1EC;
+    }
+    .Black{
+      background-color:#232629 ;
+    }
+    .Gap{
+      background-color: #000;
+    }
+
+    
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class= "Container">
+    <div class = "Red"></div>
+    <div class = "White-TCol"></div>
+    <div class = "White-Drow"></div>
+    <div class = "White-Drow-Dcol"></div>
+    <div class = "Blue">
+      <div class = "Blue"></div>
+      <div class = "Gap"></div>
+    </div>
+    <div class = "White-Drow"></div>
+    <div class = "White"></div>
+    <div class = "Yellow"></div>
+    <div class = "Black"></div>
+    
+  </div>
+</body>
+
+</html>
