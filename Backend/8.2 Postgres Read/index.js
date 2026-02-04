@@ -9,7 +9,7 @@ let quiz = [];
 
 let db = new pg.Client({
   user: "postgres",
-  password: "Eses2626.",
+  password: "Sifre.",
   database: "world",
   host: "localhost",
   port: 5432
