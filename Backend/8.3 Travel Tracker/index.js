@@ -13,7 +13,7 @@ app.use(express.static("public"));
 let db = new pg.Client({
   user: "postgres",
   database: "world",
-  password: "Eses2626.",
+  password: "Sifre",
   port: 5432,
   host: "localhost"
 });
