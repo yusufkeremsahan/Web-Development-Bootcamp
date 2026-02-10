@@ -53,12 +53,10 @@ app.post("/login", async (req, res) => {
       if(password === result.rows[0].password){
         res.render("secrets.ejs");
       }else{
-        console.log("Hatalı giriş");
-        res.redirect("/login");
+        res.send("Invalid password!");
       }
     }else{
-      console.log("Kullanici bulunamadi!");
-      res.redirect("/login");
+      res.render("Invalid mail!");
     }
   }catch(err){
     console.log(err);
